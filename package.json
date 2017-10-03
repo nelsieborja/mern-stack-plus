@@ -1,0 +1,33 @@
+{
+  "name": "mern-stack",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "cross-env": "^5.0.5",
+    "express": "^4.15.5",
+    "foreman": "^2.0.0",
+    "marked": "^0.3.6",
+    "mongoose": "^4.11.13",
+    "nodemon": "^1.12.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-snapshot": "^1.2.0",
+    "styled-components": "^2.2.0"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "proxy": "http://localhost:3001/",
+  "scripts": {
+    "start": "react-scripts start",
+    "start-dev": "nf start",
+    "start-prod": "cross-env NODE_ENV=production node ./server.js",
+    "build": "react-scripts build && react-snapshot",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
